@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+SG Self Assessment - Restaurant Site v1
+Contact Us
+-->
+<html>
+    <head>
+        <title>Cater with Singh's</title>
+    </head>
+    <body>
+        <main>
+            <!--Site header-->
+            <header style="text-align: center; color: darkred;">
+                <h1>Singh's Bush Cook - Bar &AMP; Restaurant</h1>
+                <h3>Serving countryside Indo-Guyanese cuisine and fusion dishes since 2020</h4>
+                    <h5>999-99 Liberty Ave, Queens, NY 99999 &#124; 555-555-5555</h5>
+                    <hr/>
+            </header>
+
+            <!--Navigation-->
+            <nav style="text-align: center;">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <hr/>
+            </nav>
+
+            <section style="color: darkred; text-align: center;">
+                <h2 style="text-align: center">Contact Us</h2>
+                <form action="submit.html" method="POST">
+                    <!--Text Inputs-->
+                    <label for="name">Name:</label>
+                    <br/><input type="text" id="name" required/><br/>
+                    <p></p>
+
+                    <label for="email">E-mail:</label>
+                    <br/><input type="text" id="email" required/><br/>
+                    <p></p>
+
+                    <label for="phone">Phone Number:</label>
+                    <br/><input type="text" id="phone" required/><br/>
+                    <p></p>
+
+                    <!--Select/Drop Down Menus-->
+                    <label for="inquiry">Reasons for Contacting</label><br/>
+                    <select>
+                        <option value="catering" selected>Catering</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <br/>
+                    <label for="cater">Catering Type:</label><br/>
+                    <select>
+                        <option value="weddingHall">Wedding - Hall</option>
+                        <option value="weddingChurch">Wedding - Church</option>
+                        <option value="party">Private Party</option>
+                        <option value="jhandi">Jhandi or other Religious Function</option>
+                        <option value="na" selected>--Not Applicable--</option>
+                    </select>
+                    
+                    <!--Textarea-->
+                    <br/><br/>
+                    <label for="comments">Feedback and Additional Comments</label><br/>
+                    <textarea id="comments" name="comments"></textarea>
+                    
+                    <!--Radio Buttons-->
+                    <fieldset>
+                        <legend>Have you ever eat here or ordered food from us?</legend>
+                        <input type="radio" id="choice1" name="everBeen" value="No">
+                        <label for="choice1">No</label><br/>
+                        <input type="radio" id="choice2" name="everBeen" value="Yes">
+                        <label for="choice2">Yes</label><br/>
+                    </fieldset>
+                    
+                    <!--Checkbox-->
+                    <fieldset>
+                        <legend>Best days to reach out:</legend>
+                        <input type="checkbox" id="m" name="contactDay" value="M">
+                        <label for="m">M</label>
+                        <input type="checkbox" id="t" name="contactDay" value="T">
+                        <label for="t">T</label>
+                        <input type="checkbox" id="w" name="contactDay" value="W">
+                        <label for="w">W</label>
+                        <input type="checkbox" id="th" name="contactDay" value="TH">
+                        <label for="th">Th</label>
+                        <input type="checkbox" id="f" name="contactDay" value="F">
+                        <label for="f">F</label>
+                    </fieldset>
+
+                    <!--Form Action Buttons-->
+                    <br/>
+                    <input type="submit"/>
+                    <input type="reset"/>
+                </form>
+            </section>
+
+            <!--Footer-->
+            <footer style="text-align: center">
+                <hr />
+                <p>999-99 Liberty Ave, Queens, NY 99999 &#124; 555-555-5555</p>
+                <p>&copy; 2020 Narish Singh. All rights reserved. Disclaimer: this is a fictional establishment</p>
+            </footer>
+        </main>
+    </body>
+</html>
