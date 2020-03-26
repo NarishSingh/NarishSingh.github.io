@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Contact info
+Added form with text, select, checkbox, radio, textarea
+-->
+<html lang="en">
+    <head>
+        <title>Contact Information</title>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Information</h1>
+        </header>
+
+        <nav>
+            <hr />
+            <p><strong>Pages</strong></p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="projects.html">Projects</a></p>
+            <p><a href="testimonials.html">Testimonials</a></p>
+            <hr />
+            <a href="index.html"><img src="images/selfportrait.jpg" alt="Photo of me, Narish" width="400"/></a>
+        </nav>
+
+        <h2>Information Request</h2>
+        <form action="submit.html" method="POST">
+            <!--Text inputs, required-->
+            <label for="firstName">First Name:</label> 
+            <br/><input type="text" id="firstName" name="firstName" required/><br/>
+            <p></p>
+            <label for="lastName">Last Name:</label> 
+            <br/><input type="text" id="lastName" name="lastName" required/><br/>
+            <p></p>
+            <label for="phone">Phone Number:</label> 
+            <br/><input type="text" id="phone" name="phone" required/><br/>
+            <p></p>
+
+            <!--Select/Drop down menu-->
+            <label for="calltime">Best Time to Call:</label> 
+            <br/>
+            <select name="calltime">
+                <option value="default" selected>--Select one--</option>
+                <option value="morning">9AM - 12PM (noon)</option>
+                <option value="afternoon">12PM - 5PM</option>
+                <option value="evening">5PM - 8PM</option>
+            </select>
+            <br/>
+
+            <!--Checkbox-->
+            <label for="interested"></label>
+            <br/>
+            <fieldset>
+                <legend>I am interested in:</legend><br/>
+                <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+                <label for="frontEnd">Front End Development</label>
+                <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+                <label for="backEnd">Back End Development</label>
+                <input type="checkbox" id="fullStack" name="interest" value="fullStack">
+                <label for="fullStack">Full Stack Development</label>
+            </fieldset>
+            <br/>
+            
+            <!--Radio-->
+            <label for="completed"></label>
+            <fieldset>
+                <legend>I have completed this form:</legend>
+                <input type="radio" id="choice1" name="questionnaire" value="yes">
+                <label for="choice1">Yes</label><br/>
+                <input type="radio" id="choice2" name="questionnaire" value="no">
+                <label for="choice2">No</label><br/>
+            </fieldset>
+            
+            <!--Textarea-->
+            <label for="comments">Additional Comments></label><br/>
+            <textarea id="comments" name="comments"></textarea>
+
+            <br/>
+            <input type="submit"/><input type="reset"/>
+        </form>
+
+        <footer>
+            <hr />
+            <p>&copy; 2020 Narish Singh. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
