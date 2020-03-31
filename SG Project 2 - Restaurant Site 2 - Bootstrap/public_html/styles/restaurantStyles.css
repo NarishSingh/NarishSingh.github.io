@@ -19,27 +19,68 @@ header, nav bar, footer
     Author     : Narish
 */
 
-/* Page Structure */
-header
+/** Page Structure */
+.container-fluid
+{
+    background-color: rgba(209, 163, 10, 0.2);
+}
+
+header, footer
 {
     font-family: georgia;
     text-align: center;
+    background-color: rgba(16, 102, 11, 0.2);
     color: darkred;
 }
 
-/*TODO navbar*/
-/*style="text-align: center"*/
-
-img
+/*Header specific*/
+header .container
 {
-    /*TODO center and other stuff*/
+    width: 100%;
 }
 
-h2, h3
+.headerImage
+{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.headerText
+{
+    position: inherit;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: darkred;
+    width: 100%;
+    padding: 10px;
+}
+
+/*Image*/
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+/*Headings*/
+article h2
 {
     font-family: georgia;
     text-align: center;
-    color: darkred;
+    color: black;
+    text-decoration: underline;
+}
+
+article h3
+{
+    font-family: georgia;
+    font-style: italic;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
 }
 
 article p
@@ -48,19 +89,14 @@ article p
     color: darkred;
 }
 
-footer
-{
-    text-align: center
-}
+/** Form Specific */
 
-/*Form Specific*/
-
-/*Menu Specific*/
+/** Menu Specific */
 /*Table*/
 
 table
 {
-    border: 1px;
+    border: solid;
     align-content: center;
 }
 
