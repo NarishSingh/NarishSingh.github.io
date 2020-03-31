@@ -56,6 +56,26 @@ header .container
     padding: 10px;
 }
 
+/*Navbar*/
+nav
+{ 
+    border-top: thin darkred solid;
+    border-bottom: thin darkred solid;
+    padding: 5px;
+}
+
+nav .btn
+{
+    background-color: whitesmoke;
+    color: darkred;
+}
+
+nav .btn:hover
+{
+    background-color: darkred;
+    font-weight: bold;
+}
+
 /*Image*/
 .center
 {
@@ -65,7 +85,7 @@ header .container
     width: 400px;
 }
 
-/*Headings*/
+/*Text*/
 article h2
 {
     font-family: georgia;
