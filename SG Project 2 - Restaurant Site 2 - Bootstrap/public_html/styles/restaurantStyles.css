@@ -56,11 +56,11 @@ header .container
     padding: 10px;
 }
 
-/*Navbar*/
+/*Nav*/
 nav
 { 
-    border-top: thin darkred solid;
-    border-bottom: thin darkred solid;
+    border-top: thin black solid;
+    border-bottom: thin black solid;
     padding: 5px;
 }
 
@@ -72,8 +72,24 @@ nav .btn
 
 nav .btn:hover
 {
-    background-color: darkred;
+    background-color: goldenrod;
     font-weight: bold;
+}
+
+.links
+{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.links:hover
+{
+    color: darkred;
+}
+
+.links:active
+{
+    text-decoration: none;
 }
 
 /*Image*/
@@ -94,7 +110,7 @@ article h2
     text-decoration: underline;
 }
 
-article h3
+article h3, article h4
 {
     font-family: georgia;
     font-style: italic;
@@ -113,11 +129,28 @@ article p
 
 /** Menu Specific */
 /*Table*/
-
 table
 {
-    border: solid;
-    align-content: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+table .cellTitle
+{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+table td
+{
+    text-align: center;
+    font-style: italic;
+    font-family: georgia;
+}
+
+table caption
+{
+    text-align: center;
 }
 
 /*Lists*/
