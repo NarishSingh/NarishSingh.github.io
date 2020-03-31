@@ -19,7 +19,7 @@ header, footer
     color: darkred;
 }
 
-/*Header specific*/
+/*Main Page Header specific*/
 header .container
 {
     width: 100%;
@@ -36,7 +36,7 @@ header .container
 {
     position: inherit;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.5);
     color: darkred;
     width: 100%;
     padding: 10px;
@@ -112,7 +112,6 @@ article p
 }
 
 /** Form Specific */
-/*TODO finish form section*/
 form
 {
     width: 100%;
@@ -126,7 +125,7 @@ label, legend
 fieldset 
 {
     background-color: rgba(0,159,71,.2);
-    width: 100%;
+    width: 80%;
     padding: 12px 12px;
     margin: 0px auto;
     box-sizing:	border-box;
@@ -187,23 +186,26 @@ table
     margin: auto;
 }
 
-table .cellTitle
+.cellTitle
 {
+    font-family: georgia;
     font-weight: bolder;
     text-decoration: underline;
 }
 
-table td
+.col-lg-3, .col-md-4, .col-sm-6
 {
     border-collapse: collapse;
     text-align: center;
     font-style: italic;
     font-family: georgia;
+    border: thin solid #666666;
 }
 
 table caption
 {
     text-align: center;
+    font-family: georgia;
 }
 
 /*Lists*/
