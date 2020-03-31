@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+SG Code Along 9 - Portfolio with CSS/Bootstrap
+centered the entire page
+Floated images to the left, and made the written sections float next to them
+Added navigation buttons and interactivity
+
+Name: Narish
+Date Created: 3/30/20
+Last Revision: 3/31/20
+-->
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+
+        <!--Linking External Style Sheet-->
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <h1>Portfolio for Narish</h1>
+            </header>
+
+            <nav class="d-flex p-2 justify-content-center">
+                <p><strong>Pages</strong></p>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="testimonials.html">Testimonials</a>
+                <div class="clear-float"></div>
+            </nav>
+
+            <section>
+                <nav class="d-flex p-2 justify-content-center"> <!--Bookmark links-->
+                    <p><em>Table of Contents</em></p>
+                    <p><a href="#about-me">1. About Me</a></p>
+                    <p><a href="#past-experience">2. Past Experience</a></p>
+                    <p><a href="#hobbies">3. Hobbies</a></p>
+                    <div class="clear-float"></div>
+                </nav>
+
+                <article id="about-me">
+                    <h2><em>About Me</em></h2>
+                    <figure><img src="images/selfportrait2.jpg" alt="Photo of me, Narish" width="400"/></figure>
+                    <p>My name is <strong>Narish Singh</strong>, I am a student of TechHire Open Code at LAGCC. I was formerly a pre-med student</p>
+                    <p><span style="background-color: lightblue; border: thin solid darkblue;">I am working on my Software Guild certification, and this is a code along for the Intro to Web Dev course</span></p>
+
+                    <!--to ensure it doesn't catch the next section-->
+                    <div class="clear-float"></div> 
+                </article>
+
+                <article id="past-experience">
+                    <h2><em>Past Experience</em></h2>
+                    <figure><img src="images/podium.png" alt="Podium clipart for Past Experiences article" width="200"/></figure>
+
+                    <div class="right-content">
+                        <!--Table-->
+                        <table border="1">
+                            <caption>Employment History</caption>
+                            <thead>
+                                <tr> <th>Years Employed</th> <th>Employer</th> <th>Title</th> </tr>
+                            </thead>
+                            <tbody>
+                                <tr> <td>2020 - Present</td> <td>TechHire Open Code</td> <td>Student</td> </tr>
+                                <tr> <td>2018 - 2019</td> <td rowspan="3">American Debate League</td> <td>Queens Borough Director</td> </tr>
+                                <tr> <td>2017 - 2018</td> <td>Queens, Bronx, and Long Island Coordinator</td> </tr>
+                                <tr> <td>2014 - 2019</td> <td>Senior Debate Instructor</td> </tr>
+                                <tr> <td>2014</td> <td>H&amp;M Global Flagship</td> <td>Sales Associate</td> </tr>
+                                <tr> <td>2013</td> <td>American Eagle Outfitters</td> <td>Sales Associate</td> </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="clear-float"></div>
+                </article>
+
+                <article id="hobbies">
+                    <h2><em>Hobbies</em></h2>
+                    <figure><img src="images/books.gif" alt="Book clipart for Hobbies article" width="400"/></figure>
+
+                    <div class="right-content">
+                        <ul>
+                            <li>Reading</li>
+                            <ol>
+                                <li>Philosophy - modern and continental</li>
+                                <li>History</li>
+                                <li>Poetry</li>
+                            </ol>
+                            <li>Writing and researching</li>
+                            <li>Going to museums</li>
+                            <ol>
+                                <li>Art</li>
+                                <li>History</li>
+                                <li>Science and Mechanical</li>
+                            </ol>
+                            <li>Listening to music from various genres and from all over the world</li>
+                            <li>Coding in C++, Java, and JavaScript/HTML/CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="clear-float"></div>
+                </article>
+
+                <footer>
+                    <hr />
+                    <p>&copy; 2020 Narish Singh. All rights reserved.</p>
+                </footer>
+            </section>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
