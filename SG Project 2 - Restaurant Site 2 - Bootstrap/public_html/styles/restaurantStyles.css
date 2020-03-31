@@ -1,8 +1,77 @@
 /*
-External Stylesheet
+font
+-headings
+-regular text
+
+colors
+-font
+-BG
+
+body layout
+-margings
+-padding
+-text alignment
+
+header, nav bar, footer
 */
 /* 
     Created on : Mar 30, 2020, 7:18:42 PM
     Author     : Narish
 */
 
+/* Page Structure */
+header
+{
+    font-family: georgia;
+    text-align: center;
+    color: darkred;
+}
+
+/*TODO navbar*/
+/*style="text-align: center"*/
+
+img
+{
+    /*TODO center and other stuff*/
+}
+
+h2, h3
+{
+    font-family: georgia;
+    text-align: center;
+    color: darkred;
+}
+
+article p
+{
+    font-family: georgia;
+    color: darkred;
+}
+
+footer
+{
+    text-align: center
+}
+
+/*Form Specific*/
+
+/*Menu Specific*/
+/*Table*/
+
+table
+{
+    border: 1px;
+    align-content: center;
+}
+
+/*Lists*/
+ol
+{
+    list-style-type: square;
+}
+
+li
+{
+    font-style: italic;
+    font-family: georgia;
+}
