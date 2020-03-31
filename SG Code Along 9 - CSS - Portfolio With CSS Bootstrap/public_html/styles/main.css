@@ -33,6 +33,7 @@ header, footer
 
 h1
 {
+    text-align: center;
     font-size: 2.5em;
 }
 
@@ -87,7 +88,7 @@ label, fieldset{
 input[type=text] 
 {
     border: 2px solid #0d1f2d;
-    width: 50%;
+    width: 60%;
     padding: 8px 8px;
     margin: 12px 0;
     box-sizing: border-box;
@@ -125,7 +126,7 @@ input[type=submit]:hover
 
 textarea 
 {
-    width: 100%;
+    width: 80%;
     height: 200px;
     padding: 12px 20px;
     margin: 12px 0;
@@ -166,8 +167,6 @@ nav a
     display: block;
     margin: 20px;
     width: 100px;
-    
-    float: left;
 }
 
 nav a:hover 
@@ -182,5 +181,34 @@ nav a:active
 }
 
 nav a:visited {
+    color: #e4c3ad; 
+}
+
+.bookmark
+{
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 5px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    
+    display: block;
+    margin: 20px;
+    width: auto;
+}
+
+.bookmark:hover 
+{
+    background-color: #fef9ff;
+    color: #5b7d87; 
+}
+
+.bookmark:active 
+{
+    font-weight: bold;
+}
+
+.bookmark:visited {
     color: #e4c3ad; 
 }
