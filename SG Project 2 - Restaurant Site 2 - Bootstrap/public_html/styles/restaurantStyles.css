@@ -118,13 +118,9 @@ form
     width: 100%;
 }
 
-form .col
-{
-    float: center;
-}
-
 label, legend
 {
+    float: center;
     font-family: georgia;
 }
 
