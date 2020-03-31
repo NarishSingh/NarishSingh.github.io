@@ -1,20 +1,6 @@
-/*
-font
--headings
--regular text
-
-colors
--font
--BG
-
-body layout
--margings
--padding
--text alignment
-
-header, nav bar, footer
-*/
 /* 
+SG Self Assessment - Restaurant Site v2
+Stylesheet
     Created on : Mar 30, 2020, 7:18:42 PM
     Author     : Narish
 */
@@ -126,6 +112,26 @@ article p
 }
 
 /** Form Specific */
+/*TODO finish form section*/
+form
+{
+    width: 100%;
+    align-content: center;
+}
+
+label
+{
+    font-family: georgia;
+}
+
+input[type=text] 
+{
+    border: 1px solid darkgreen;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
 /** Menu Specific */
 /*Table*/
