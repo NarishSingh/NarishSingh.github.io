@@ -52,6 +52,7 @@ nav
 
 nav .btn
 {
+    font-family: georgia;
     background-color: whitesmoke;
     color: darkred;
 }
@@ -115,6 +116,11 @@ article p
 form
 {
     width: 100%;
+}
+
+form .col
+{
+    float: center;
 }
 
 label, legend
