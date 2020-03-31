@@ -8,14 +8,14 @@ Stylesheet
 /** Page Structure */
 .container-fluid
 {
-    background-color: rgba(209, 163, 10, 0.2);
+    background-color: rgba(252,210,15, 0.3);
 }
 
 header, footer
 {
     font-family: georgia;
     text-align: center;
-    background-color: rgba(16, 102, 11, 0.2);
+    background-color: rgba(0,159,71,0.5);
     color: darkred;
 }
 
@@ -116,21 +116,67 @@ article p
 form
 {
     width: 100%;
-    align-content: center;
 }
 
-label
+label, legend
 {
     font-family: georgia;
+}
+
+fieldset 
+{
+    background-color: rgba(0,159,71,.2);
+    width: 100%;
+    padding: 12px 12px;
+    margin: 0px auto;
+    box-sizing:	border-box;
 }
 
 input[type=text] 
 {
     border: 1px solid darkgreen;
-    width: 50%;
-    padding: 8px 8px;
-    margin: 0 auto;
-    box-sizing: border-box;
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+}
+
+textarea 
+{
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    resize: none;
+}
+input[type=submit] 
+{
+    font-size: 1.5em;
+    background-color: darkred;
+    color: whitesmoke;
+    padding: 5px 8px;
+}
+
+input[type=submit]:hover 
+{
+    background-color: goldenrod;
+    color: black;
+}
+
+input[type=reset] 
+{
+    font-size: 1.2em;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+input[type=reset]:hover 
+{
+    background-color: goldenrod;
+    color: black;
 }
 
 /** Menu Specific */
@@ -138,7 +184,7 @@ input[type=text]
 table
 {
     width: 75%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 table .cellTitle
@@ -149,6 +195,7 @@ table .cellTitle
 
 table td
 {
+    border-collapse: collapse;
     text-align: center;
     font-style: italic;
     font-family: georgia;
