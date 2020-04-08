@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+Contact info
+-->
+<html lang="en">
+    <head>
+        <title>Contact Information</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    </head>
+    <body>
+        <header>
+            <h1>Contact Me</h1>
+        </header>
+
+        <nav class="d-flex p-2 justify-content-center">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="testimonials.html">Testimonials</a>
+            <div class="clear-float"></div>
+        </nav>
+
+        <form action="submit.html" method="POST">
+            <!--Text inputs, required-->
+            <div class="d-flex p-2 justify-content-center">
+                <label for="firstName">First Name:</label>
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <br/><input type="text" id="firstName" name="firstName" required/><br/>
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <label for="lastName">Last Name:</label> 
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <br/><input type="text" id="lastName" name="lastName" required/><br/>
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <label for="phone">Phone Number:</label> 
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <br/><input type="text" id="phone" name="phone" required/><br/>
+            </div>
+
+            <!--Select/Drop down menu-->
+            <div class="d-flex p-2 justify-content-center">
+                <label for="calltime">Best Time to Call:</label> 
+                <br/>
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <select name="calltime">
+                    <option value="default" selected>--Select one--</option>
+                    <option value="morning">9AM - 12PM (noon)</option>
+                    <option value="afternoon">12PM - 5PM</option>
+                    <option value="evening">5PM - 8PM</option>
+                </select>
+                <br/>
+            </div>
+
+            <!--Checkbox-->
+            <div class="d-flex p-2 justify-content-center">
+                <label for="interested"></label>
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <br/>
+                <fieldset>
+                    <legend>I am interested in:</legend><br/>
+                    <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+                    <label for="frontEnd">Front End Development</label>
+                    <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+                    <label for="backEnd">Back End Development</label>
+                    <input type="checkbox" id="fullStack" name="interest" value="fullStack">
+                    <label for="fullStack">Full Stack Development</label>
+                </fieldset>
+                <br/>
+            </div>
+
+            <!--Radio-->
+            <div class="d-flex p-2 justify-content-center">
+                <label for="completed"></label>
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <fieldset>
+                    <legend>I have completed this form:</legend>
+                    <input type="radio" id="choice1" name="questionnaire" value="yes">
+                    <label for="choice1">Yes</label><br/>
+                    <input type="radio" id="choice2" name="questionnaire" value="no">
+                    <label for="choice2">No</label><br/>
+                </fieldset>
+            </div>
+
+            <!--Textarea-->
+            <div class="d-flex p-2 justify-content-center">
+                <label for="comments">Additional Comments</label><br/>
+            </div>
+            <div class="d-flex p-2 justify-content-center">
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+
+            <br/>
+            <div class="d-flex p-2 justify-content-center">
+                <input type="submit"/><input type="reset"/>
+            </div>
+        </form>
+
+        <footer>
+            <p>&copy; 2020 Narish Singh. All rights reserved.</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

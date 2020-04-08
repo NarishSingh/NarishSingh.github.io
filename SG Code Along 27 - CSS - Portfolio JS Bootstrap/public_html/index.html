@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+SG Code Along 27 - Portfolio with JS Bootstrap
+Adding Accordion object
+
+Name: Narish
+Date Created: 4/6/20
+Last Revision: 4/8/20
+-->
+<html lang="en">
+    <head>
+        <title>Portfolio</title>
+        <link href="styles/main.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio for Narish</h1>
+        </header>
+
+        <nav id="internalLinks" class="d-flex p-2 justify-content-center">
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="testimonials.html">Testimonials</a>
+            <div class="clear-float"></div>
+        </nav>
+
+        <em>Table of Contents</em>
+        <nav id="bookmarkLinks" class="d-flex p-2">
+            <a class="bookmark" href="#about-me">I. About Me</a>
+            <a class="bookmark" href="#past-experience">II. Past Experience</a>
+            <a class="bookmark" href="#hobbies">III. Hobbies</a>
+            <div class="clear-float"></div>
+        </nav>
+
+        <!--NEW, accordion object moved down to a more reasonable place-->
+<!--        <div class="row">
+            <div class="col-lg-3 col-md">
+                <figure><img src="images/selfportraitcropped.png" alt="Photo of me, Narish" width="400"/></figure>
+            </div>
+            
+            <div class="col-lg-9 col-md">
+                <p>My name is <strong>Narish Singh</strong>, I am a student of TechHire Open Code at LAGCC. I was formerly a pre-medicine student</p>
+                <p><span style="background-color: lightblue; border: thin solid darkblue;">I am working on my Software Guild certification</span></p>
+            </div>
+        </div>-->
+        
+
+        <article id="about-me">
+            <h2><em>About Me</em></h2>
+            <figure><img src="images/selfportraitcropped.png" alt="Photo of me, Narish" width="400"/></figure>
+            <p>My name is <strong>Narish Singh</strong>, I am a student of TechHire Open Code at LAGCC. I was formerly a pre-medicine student</p>
+            <p><span style="background-color: lightblue; border: thin solid darkblue;">I am working on my Software Guild certification</span></p>            
+            <div class="clear-float"></div>
+        </article>
+
+        <!--Accordion Object-->
+        <div class="accordion" id="contentAccordion">
+            <!--Card-->
+            <div class="card">
+                <!--Card Headers, includes hyperlinked text to site-->
+                <div class="card-header" id="portfolio01">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            My 1st Portfolio Piece
+                        </button>
+                    </h5>
+                </div>
+                
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#contentAccordion">
+                    <!--Card Body-->
+                    <div class="card-body">
+                        <p><a href="https://narishsingh.github.io/SG%20Project%201%20-%20Restaurant%20Site%201/public_html/index.html" target="_blank">Restaurant Site V1 - HTML only</a></p>
+                        <figure><img src="images/firstwebsitesnip.jpg" alt="Narish's 1st site - HTML only" class="accordionPic"></figure>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header" id="portfolio02">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            My 2nd Portfolio Piece
+                        </button>
+                    </h5>
+                </div>
+                
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#contentAccordion">
+                    <div class="card-body">
+                        <p><a href="https://narishsingh.github.io/SG%20Project%202%20-%20Restaurant%20Site%202%20-%20Bootstrap/public_html/index.html" target="_blank">Restaurant Site V2 - HTML and CSS with Bootstrap</a></p>
+                        <figure><img src="images/secondwebsitesnip.jpg" alt="Narish's 2nd site - HTML/CSS" class="accordionPic"></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <article id="past-experience">
+            <h2><em>Past Experience</em></h2>
+            <figure><img src="images/podium.png" alt="Podium clipart for Past Experiences article" width="300"/></figure>
+
+            <div class="right-content">
+                <table border="1">
+                    <caption style="text-align: center">Employment History</caption>
+                    <thead>
+                        <tr> <th>Years Employed</th> <th>Employer</th> <th>Title</th> </tr>
+                    </thead>
+                    <tbody>
+                        <tr> <td>2020 - Present</td> <td>TechHire Open Code</td> <td>Student</td> </tr>
+                        <tr> <td>2018 - 2019</td> <td rowspan="3">American Debate League</td> <td>Queens Borough Director</td> </tr>
+                        <tr> <td>2017 - 2018</td> <td>Queens, Bronx, and Long Island Coordinator</td> </tr>
+                        <tr> <td>2014 - 2019</td> <td>Senior Debate Instructor</td> </tr>
+                        <tr> <td>2014</td> <td>H&amp;M Global Flagship</td> <td>Sales Associate</td> </tr>
+                        <tr> <td>2013</td> <td>American Eagle Outfitters</td> <td>Sales Associate</td> </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="clear-float"></div>
+        </article>
+
+        <article id="hobbies">
+            <h2><em>Hobbies</em></h2>
+            <figure><img src="images/books.gif" alt="Book clipart for Hobbies article" width="400"/></figure>
+
+            <div class="right-content">
+                <ul>
+                    <li>Reading</li>
+                    <ol>
+                        <li>Philosophy - modern and continental</li>
+                        <li>History</li>
+                        <li>Poetry</li>
+                    </ol>
+                    <li>Writing and researching</li>
+                    <li>Going to museums</li>
+                    <ol>
+                        <li>Art</li>
+                        <li>History</li>
+                        <li>Science and Mechanical</li>
+                    </ol>
+                    <li>Listening to music from various genres and from all over the world</li>
+                    <li>Coding in C++, Java, and JavaScript/HTML/CSS</li>
+                </ul>
+            </div>
+
+            <div class="clear-float"></div>
+        </article>
+
+        <footer>
+            <p>&copy; 2020 Narish Singh. All rights reserved.</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

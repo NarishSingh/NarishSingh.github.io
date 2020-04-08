@@ -1,0 +1,215 @@
+/*
+External Style Sheet
+
+Date Created: 4/6/20
+Last Revision: 4/8/20
+*/
+
+nav
+{
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+    margin-top: 4px;
+}
+
+body
+{
+    background-color: darkgrey;
+    font-family: georgia;
+    color: #0d1f2d;
+}
+
+header, footer
+{
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+    padding: 30px 10px 20px 10px;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#past-experience
+{
+    
+}
+
+/*Table Stylings*/
+caption
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+table, th, td
+{
+    border: 1px solid #0d1f2f;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+table
+{
+    width: 90%;
+    margin: auto;
+}
+
+tr
+{
+    height: 30px;
+}
+
+th
+{
+    background-color: #546a7b;
+    color: #f2eded;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #e4c3ad;
+}
+
+/*Form Styling*/
+label, fieldset{
+    font-size: 1.1em;
+}
+
+input[type=text] 
+{
+    border: 2px solid #0d1f2d;
+    width: 60%;
+    padding: 8px 8px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+fieldset 
+{
+    background-color: #fef9ff;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing:	border-box;
+}
+
+select, textarea 
+{
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+input[type=submit] 
+{
+    font-size: 1.2em;
+    background-color: #546a7b;
+    color: #fef9ff;
+    padding: 4px 8px;
+}
+
+input[type=submit]:hover 
+{
+    background-color: #f2eded;
+    color: #546a7b;
+}
+
+textarea 
+{
+    width: 80%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #0d1f2d;
+    border-radius: 3px;
+    background-color: #fff;
+    resize: none;
+}
+
+/*Image Stylings*/
+.clear-float
+{
+    clear:both;
+}
+
+article img
+{
+    float: left;
+}
+
+.right-content
+{
+    float: left;
+}
+
+.accordionPic
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Nav Buttons*/
+nav a 
+{
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    
+    display: block;
+    margin: 20px;
+    width: 100px;
+}
+
+nav a:hover 
+{
+    background-color: #fef9ff;
+    color: #5b7d87; 
+}
+
+nav a:active 
+{
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: #e4c3ad; 
+}
+
+.bookmark
+{
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 5px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    text-align: center;
+    
+    display: block;
+    margin: 20px;
+    width: auto;
+}
+
+.bookmark:hover 
+{
+    background-color: #fef9ff;
+    color: #5b7d87; 
+}
+
+.bookmark:active 
+{
+    font-weight: bold;
+}
+
+.bookmark:visited {
+    color: #e4c3ad; 
+}
