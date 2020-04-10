@@ -79,8 +79,8 @@ function play()
         biggestBank(bank, rollCt); //monitor highest earning
         
         //debug tools
-//        console.log("roll #" + rollCt + ": " + roundRoll + " | bank: $" + bank); 
-//        console.log("Highest earning = " + peakEarnAmount + " at turn #" + peakEarnTurn);
+        console.log("roll #" + rollCt + ": " + roundRoll + " | bank: $" + bank); 
+        console.log("Highest earning = " + peakEarnAmount + " at turn #" + peakEarnTurn);
     }
 
     /*RESULTS SHOW*/
