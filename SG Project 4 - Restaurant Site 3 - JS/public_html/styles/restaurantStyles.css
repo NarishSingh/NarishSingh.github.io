@@ -9,7 +9,7 @@ Stylesheet
     background-color: rgba(252,210,15, 0.3);
 }
 
-header, header .jumbotron
+header, header .jumbotron, .jumbotron
 {
     font-family: 'Aguafina Script', cursive;
     text-align: center;
