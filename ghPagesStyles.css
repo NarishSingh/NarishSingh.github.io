@@ -6,3 +6,37 @@ Styles for homepage
     Author     : naris
 */
 
+header, footer
+{
+    background-color: rgb(70,70,70);
+    text-align: center;
+    color: whitesmoke;
+    font-family: georgia;
+}
+
+body
+{
+    font-family: georgia;
+    background-color: rgb(127,126,126);
+}
+
+figure img
+{
+    float: center;
+    height: 400px;
+}
+
+.links
+{
+    color: red;
+}
+
+.links:hover
+{
+    color: lightskyblue;
+}
+
+.links:visited
+{
+    color: gold;
+}
