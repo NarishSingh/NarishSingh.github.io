@@ -85,7 +85,7 @@ function play()
 
     /*RESULTS SHOW*/
     document.getElementById("totalRolls").innerText = rollCt;
-    document.getElementById("highestEarning").innerText = peakEarnAmount;
+    document.getElementById("highestEarning").innerText = "$" + peakEarnAmount;
     document.getElementById("highestEarningRollCount").innerText = peakEarnTurn;
     
     document.getElementById("results").style.display = "block";
