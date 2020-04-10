@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Dice Game V1
+
+Authors: Elena, Boburjon, Abdullah, Narish
+Date Created: 4/6/20
+Last Modified: 4/7/20
+-->
+<html>
+    <head>
+        <title>Dice!!!</title>
+
+        <!--links-->
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="container" id="title">
+                <h1>Dice Game</h1>
+            </div>
+            
+            <div class="container" id="playerGoal">
+                <h2>Roll to <span id="winningRoll"></span></h2>
+            </div>
+
+            <div class="container" id="diceRoll">
+                <img src="images/dice-1.gif" alt="Dice #1 - begins on 1" class="dice1">
+                <img src="images/dice-1.gif" alt="Dice #2 - begins on 1" class="dice2">
+                <div style="width:30px; border: solid 5px #D1D7FF;"></div>
+                <form action="" method="POST">
+                    <input type="button" id="button" value="Roll!" class="btn btn-outline-primary">
+                    <input type="reset" id="restartGame" value="New Game" class="btn btn-outline-danger">
+                </form>
+            </div>
+            
+            <div class="container">
+                <h4 id="keepRolling" style="display: none;">Keep Rolling...</h4>
+            </div>
+            
+            <div class="container" id="winLossCount">
+                <h3 id="WLCt">Win: <span id="wins"></span> | Loss: <span id="losses"></span></h3>
+            </div>
+            
+<!--            <div class="container">
+                <h4 id="newGameReload" style="display: none;">Reload the page for a new game!!!</h4>
+            </div>-->            
+        </div>
+
+        <!--links-->
+        <script type="text/javascript" src="scripts/eventListener.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+SG Code Along 26 - Display Evens
+Using onclick and button instead of form
+-->
+<html>
+    <head>
+        <title>Evens in Range</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Evens in Range</h1>
+            <!--
+            <form name="inputs" class="needs-validation" onsubmit="return validate();" novalidate>
+                <div class="form-group row">
+                    <label for="start">Starting Number</label>
+                    <input type="number" class="form-control" id="start" name="start" required>
+                    <div class="invalid-feedback">Starting number is required and must be a number</div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="end">Ending Number</label>
+                    <input type="number" class="form-control" id="end" name="end" required>
+                    <div class="invalid-feedback">Starting number is required and must be a number</div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="step">Step/Increment</label>
+                    <input type="number" class="form-control" id="step" name="step" required>
+                    <div class="invalid-feedback">Starting number is required and must be a number</div>
+                </div>
+            </form>
+
+            <button type="submit" id="displayEvensBtn" name="displayEvensBtn">Display Evens</button>
+
+            <article id="results" style="display: none">
+                <h4>Here are the evens between<span id="userStart"></span> and <span id="userEnd"></span> by <span id="userStep"></span>'s:</h4>
+                <p><span id="resultsArray"></span></p>
+            </article>
+            -->
+
+            <div id="inputs">
+                Starting number: <input id="num1" type="number"><br/>
+                Ending number: <input id="num2" type="number"><br/>
+                Step/Increment: <input id="step" type="number"><br/>
+
+                <button id="calcBtn" onclick="calculate()">Calculate</button>
+            </div>
+            
+            <div id="results" style="display: none">
+                <h2>Results:</h2>
+                <p id = "resultsText"></p>
+                <p id = "answer"></p>
+                
+                <!--<h4>Here are the evens between <span id="userStart"></span> and <span id="userEnd"></span> by <span id="userStep"></span>'s:</h4>-->
+                <!--< id="resultsArray"></>-->
+            </div>
+        </div>
+
+        <script type="text/javascript" src="evensInRange.js"></script>
+    </body>
+</html>
