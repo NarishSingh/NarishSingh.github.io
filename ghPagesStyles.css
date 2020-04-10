@@ -24,7 +24,7 @@ header, footer
 
 figure img
 {
-    float: center;
+    margin: 0 auto;
     height: 400px;
 }
 
@@ -36,7 +36,7 @@ figure img
 
 .links:hover
 {
-    color: lightskyblue;
+    color: darkcyan;
 }
 
 .links:visited
