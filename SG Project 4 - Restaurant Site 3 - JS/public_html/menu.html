@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--
+SG Self Assessment - Restaurant Site v3
+Menu
+-->
+<html>
+    <head>
+        <title>Singh's Menu</title>        
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <h1>Singh's Bush Cook - Bar &AMP; Restaurant</h1>
+                <h3>Serving countryside Indo-Guyanese cuisine and fusion dishes since 2020</h3>
+                <h5>999-99 Liberty Ave, Queens, NY 99999 &#124; 555-555-5555</h5>
+                <hr/>
+            </header>
+
+            <nav style="text-align: center">
+                <a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
+                <a class="btn badge-pill disabled" href="menu.html" aria-disabled="true"><i class="fas fa-book-open"></i></a>
+                <a class="btn badge-pill" href="contact.html"><i class="fas fa-feather-alt"></i></a>
+            </nav>
+
+            <!--Sticky Navbar-->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav" aria-controls="menuNav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="nav nav-pills mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#comboReccs">Try These!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#breakfast">Breakfast</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#snacks">Snacks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#curries">Meat/Veg</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#main-course">Main Course</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#roti">Roti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sides">Sides</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#additives">Add-Ons</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sweets">Desserts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#drinks">Drinks</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#liq">Alcohol</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <article id="comboReccs">
+                <br/><br/><br/>
+                <h3>Meal Recommendations</h3>
+
+                <!--Carousel-->
+                <div id="foodCarousel" class="carousel slide float-center" data-ride="carousel">
+                    <!--indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#foodCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#foodCarousel" data-slide-to="1"></li>
+                        <li data-target="#foodCarousel" data-slide-to="2"></li>
+                        <li data-target="#foodCarousel" data-slide-to="3"></li>
+                        <li data-target="#foodCarousel" data-slide-to="4"></li>
+                    </ol>
+
+                    <!--pics with captions-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 float center" src="images/cookuprice.jpg" alt="1st Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="innerContainer">
+                                    <h5>Cook-Up Rice</h5>
+                                    <p>Our signature dish</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-75 float center" src="images/dhalricebhajee.jpg" alt="2nd Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="innerContainer">
+                                    <h5>Dhal, Rice, and Bhaji</h5>
+                                    <p>A typical dinner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-75 float center" src="images/pholourie.jpg" alt="3rd Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="innerContainer">
+                                    <h5>Phoulourie with Tamarind Sauce</h5>
+                                    <p>A savory snack for any time of day</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-75 float center" src="images/sevencurry.png" alt="4th Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="innerContainer">
+                                    <h5>Seven Curry</h5>
+                                    <p>Not a real "curry," rather a combo of 7 vegetarian foods</p>
+                                    <p>A staple of Hindu religious functions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-75 float center" src="images/mauby2.jpg" alt="5th Slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div class="innerContainer">
+                                    <h5>Mauby</h5>
+                                    <p>A drink brewed from the bark of the mauby tree</p>
+                                    <p>Our drink of the month</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--controls-->
+                    <a class="carousel-control-prev" href="#foodCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#foodCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <br/>
+
+                <table class="table-bordered">
+                    <caption>Try these pairings out!</caption>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Solid Breakfast</p>
+                            Salted Bake<br/>
+                            Fried Eggs<br/>
+                            Kanji<br/>
+                            Chai<br/>
+                        </div> <!--Cell 1-->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Weekday Lunch</p>
+                            Lamb Curry<br/>
+                            Aloo Roti<br/>
+                            Bowl of Fried Channa<br/>
+                            Mauby<br/>
+                        </div> <!--Cell 2-->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Weekday Night Dinner with Dessert</p>
+                            Chicken Curry, Aloo and White Rice<br/>
+                            Dhal<br/>
+                            Poi Bhaji<br/>
+                            Coconut Choka<br/>
+                            Salara<br/>
+                            Lime Rickey<br/>
+                        </div> <!--Cell 3-->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Break Time</p>
+                            1 Double with Everything but Slight Pepper<br/>
+                            Bara with Tamarind Sauce<br/>
+                            Cassava Pone<br/>
+                            Sorrel<br/>
+                        </div> <!--Cell 4-->
+                    </div> <!--Row 1 -->
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Saturday Lunch</p>
+                            Duck Curry with Aloo<br/>
+                            Dhal Puri<br/>
+                            Phoulourie with Tamarind Sauce<br/>
+                            Limewash<br/>
+                        </div> <!--Cell 5-->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Saturday Night Lime</p>
+                            Fried Rice and Baked Chicken<br/>
+                            Guyanese Pepper Sauce<br/>
+                            1 Fried Plantain<br/>
+                            El Dorado Rum, on the Rocks<br/>
+                            Guinness<br/>
+                        </div> <!--Cell 6-->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Sunday Midday Bojhan</p>
+                            Seven Curry<br/>
+                            Gurma with Puri<br/>
+                            Persaud (Mitai, Mohanbhog, and Pera)<br/>
+                            Chai<br/>
+                        </div> <!--Cell 7-->
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <p class="cellTitle">Sunday Dinner</p>
+                            Cook-up Rice<br/>
+                            Macaroni Pie<br/>
+                            Black Pudding<br/>
+                            Cream Soda<br/>
+                        </div> <!--Cell 8-->
+                    </div> <!--Row 2 -->
+                </table>
+            </article>
+
+            <br/>
+
+            <article id="breakfast">
+                <br/><br/><br/>
+                <h3>Breakfast</h3>
+                <p>Start your day off at the <span><strong>Bush Cook</strong></span></p>
+                <p>Egg dishes are available on a bagel or toast (whole wheat or regular), and you can add pork or turkey sausage/bacon</p>
+                <p>Pairs well with <a class="links" href="#drinks">tea or coffee</a></p>
+                <ol>
+                    <li>Toasted Platt Bread - $1</li>
+                    <li>Scrambled Eggs - $1</li>
+                    <li>Fried Eggs - $1</li>
+                    <li>Boiled Egg - $1</li>
+                    <li>Oatmeal (add brown sugar) - $1</li>
+                    <li>Pancakes - $1</li>
+                    <li>Dossay - $1</li>
+                    <li>Waffles (add syrup or butter) - $1</li>
+                    <li>Salted Bake - $1</li>
+                    <li>Aloo Roti - $1</li>
+                    <li>Bagel (add butter or cream cheese) - $1</li>
+                    <li>Kanji/Rice Porridge - $1</li>
+                    <li>Boiled Provisions - $1</li>
+                    <li>Toasted Tennis Roll (add Cheese) - $1</li>
+                    <li>Butterflop - $1</li>
+                </ol>
+            </article>
+
+            <article id="snacks">
+                <br/><br/><br/>
+                <h3>Snacks</h3>
+                <p>A variety of savory snacks, great for breakfast, dessert, or a midday break.</p> 
+                <p>Pairs well with <a class="links" href="#drinks">tea, or a homemade juice/soda</a></p>
+                <ol>
+                    <li>Plantain - Fried or Chips (with pepper sauce) - $1</li>
+                    <li>Bara (with tamarind sauce or mango chutney) - $1</li>
+                    <li>Bara (flat Trini style with tamarind) - $1</li>
+                    <li>Phoulourie - $1</li>
+                    <li>Doubles - $1</li>
+                    <li>"Chicken Feet" (fried snack) - $1</li>
+                    <li>Bake and Saltfish- $1</li>
+                    <li>Shark and Bake (Sandwich) - $1</li>
+                    <li>Chicken Sandwich - $1</li>
+                    <li>Dumplings (Chicken, Pork, Lamb, Vege) - $1</li>
+                    <li>Boiled Provisions - $1</li>
+                    <li>Bowl of Fried Channa - $1</li>
+                    <li>Black Pudding - $1</li>
+                    <li>Macaroni Pie - $1</li>
+                </ol>
+            </article>
+
+            <article id="curries">
+                <br/><br/><br/>
+                <h3>Meats and Vegetables</h3>
+                <p><strong>Curries, Stew/Cassareep, Fried, Baked, Roasted/BBQ, etc</strong></p>
+                <p>In this establishment we say Chicken Curry, but feel free to order your "curry chicken" too</p>
+                <p>Spicy and flavorful, a staple of Indian cooking. The <span><strong>Bush Cook</strong></span> offers a wide range of meat and vegetarian curries</p>
+                <p>Should be ordered with <a class="links" href="#roti">roti</a> or white, brown, or basmati rice</p>
+                <p>Most meat curries come with Aloo, <a class="links" href="#sides">sides</a> are a must for the full experience</p>
+                <p>Not everything can be curried, fried, baked, etc...Feel free to ask for recommendations on how to enjoy your favorite items!</p>
+                <ol>
+                    <li>Chicken - $1</li>
+                    <li>Lamb - $1</li>
+                    <li>Goat - $1</li>
+                    <li>Pork - $1</li>
+                    <li>Shrimp - $1</li>
+                    <li>Crab - $1</li>
+                    <li>Duck - $1</li>
+                    <li>Gilbaka (Fish) - $1</li>
+                    <li>Snapper (Fish) - $1</li>
+                    <li>Salmon (Fish) - $1</li>
+                    <li>Hassa (Fish) - $1</li>
+                    <li>Aloo - $1</li>
+                    <li>Cassava - $1</li>
+                    <li>Baigan (add Head) - $1</li>
+                    <li>Squash - $1</li>
+                    <li>Nenwa - $1</li>
+                    <li>Katahar - $1</li>
+                </ol>
+            </article>
+
+            <article id="main-course">
+                <br/><br/><br/>
+                <h3>Main Course Dishes</h3>
+                <p>Traditional and fusion dishes, all with a personal touch</p>
+                <p>Most main courses come with a <a class="links" href="#curries">meat choice</a>. Try adding a <a class="links" href="#snacks">fried plantain</a> on the side also!</p>
+                <ol>
+                    <li>Signature Cook-up Rice - $1</li>
+                    <li>Seven Curry - $1</li>
+                    <li>Chow Mein - $1</li>
+                    <li>Biriyani - $1</li>
+                    <li>Fried Rice - $1</li>
+                    <li>Kitchri - $1</li>
+                    <li>Provision Soup (Chicken or Crab) - $1</li>
+                    <li>Beans and Rice - $1</li>
+                    <li>Peas and Rice - $1</li>
+                    <li>Pasta - $1</li>
+                    <li>Baked Mac and Cheese - $1</li>
+                </ol>
+            </article>
+
+            <article id="roti">
+                <br/><br/><br/>
+                <h3>Rotis</h3>
+                <p>Flatbreads, which along with rice serve as the main base for any lunch or dinner.</p>
+                <p>Pro-tip: eat with your hands</p>
+                <ol>
+                    <li>Sada (Chapati) - $1</li>
+                    <li>Clap-hand/Buss-up Shot (Paratha) - $1</li>
+                    <li>Aloo - $1</li>
+                    <li>Dhal puri - $1</li>
+                    <li>Puri (dessert) - $1</li>
+                </ol>
+            </article>
+
+            <article id="sides">
+                <br/><br/><br/>
+                <h3>Sides</h3>
+                <p>Curry and rice or roti is great...but complete your <a class="links" href="#curries">main course</a> with some sides</p>
+                <ol style="list-style-type: square;">
+                    <li>Pumpkin - $1</li>
+                    <li>Dhal - $1</li>
+                    <li>Saijan Bhaji (add Saijan Stick) - $1</li>
+                    <li>Poi Bhaji - $1</li>
+                    <li>Karilla - $1</li>
+                    <li>Baigan Choka - $1</li>
+                    <li>Tomato Choka - $1</li>
+                    <li>Bora - $1</li>
+                    <li>Cabbage - $1</li>
+                    <li>Channa - $1</li>
+                    <li>Fried Black Beans - $1</li>
+                    <li>Chicken Liver (add Heart) - $1</li>
+                    <li>Chicken Feet (actual) - $1</li>
+                    <li>Pachowni - $1</li>
+                    <li>Pepper Shrimp - $1</li>
+                    <li>Dumplings - $1</li>
+                </ol>
+            </article>
+
+            <article id="additives">
+                <br/><br/><br/>
+                <h3>Add-ons</h3>
+                <p>Want some more spice? Or to add some layers to your <a class="links" href="#curries">main course</a>?</p>
+                <ol style="list-style-type: square;">
+                    <li>Pepper Sauce (Guyanese, Trini, or Surinamese style) - $1</li>
+                    <li>Regional Hot Sauces - $1</li>
+                    <li>Tamarind Sauce - $1</li>
+                    <li>Coconut Choka - $1</li>
+                    <li>Mango Achar - $1</li>
+                    <li>Mango Chutney - $1</li>
+                </ol>
+            </article>
+
+            <article id="sweets">
+                <br/><br/><br/>
+                <h3>Sweets/Desserts</h3>
+                <p>Treat yourself to some of our sweets and baked goods</p>
+                <ol style="list-style-type: square;">
+                    <li>Mitai - $1</li>
+                    <li>Gurma with Puri - $1</li>
+                    <li>Mohanbhog - $1</li>
+                    <li>Sweet Rice (add Puri) - $1</li>
+                    <li>Gulab Jamun - $1</li>
+                    <li>Jalebi - $1</li>
+                    <li>Kheer - $1</li>
+                    <li>Laddu - $1</li>
+                    <li>Pera - $1</li>
+                    <li>Ras Mallai - $1</li>
+                    <li>Korma - $1</li>
+                    <li>Phoulourie (sweet) - $1</li>
+                    <li>Salara/Red Cake - $1</li>
+                    <li>Pinetart - $1</li>
+                    <li>Cheese Roll - $1</li>
+                    <li>Cassava Pone - $1</li>
+                    <li>Buns - $1</li>
+                    <li>Patty - $1</li>
+                    <li>Black Cake - $1</li>
+                    <li>Rum Cake - $1</li>
+                </ol>
+            </article>
+
+            <article id="drinks">
+                <br/><br/><br/>
+                <h3>Drinks</h3>
+                <p>Quench your thirst with a variety of home made and regional brand drinks</p>
+                <ol>
+                    <li>Black tea/Chai (add milk, sugar, milo/ovaltine) - $1</li>
+                    <li>Green tea - $1</li>
+                    <li>Coffee (add milk, sugar, creamer) - $1</li>
+                    <li>Assorted Fruit Juices - $1</li>
+                    <li>Assorted Smoothies - $1</li>
+                    <li>Fresh Milk - $1</li>
+                    <li>Sorrel - $1</li>
+                    <li>Mauby - $1</li>
+                    <li>Fresh Coconut Water - $1</li>
+                    <li>Limewash - $1</li>
+                    <li>Lemonade - $1</li>
+                    <li>Peanut Punch - $1</li>
+                    <li>Seamoss - $1</li>
+                    <li>Lime Rickey - $1</li>
+                    <li>Cream Soda - $1</li>
+                    <li>Banana Soda - $1</li>
+                    <li>Ginger Beer - $1</li>
+                    <li>Peardrax - $1</li>
+                </ol>
+            </article>
+
+            <article id="liq">
+                <h3>Liquor and Beer</h3>
+                <p>Drink and enjoy yourself! Feel free to mix it up with some of our <a class="links" href="#drinks">drinks</a>.</p>
+                <ol>
+                    <li>El Dorado Rum - $1</li>
+                    <li>Diamond Reserve Demerara Rum - $1</li>
+                    <li>Sorrel with Rum - $1</li>
+                    <li>Rum Punch - $1</li>
+                    <li>Seagram's Gin - $1</li>
+                    <li>Bombay Sapphire Gin - $1</li>
+                    <li>Absolut Vodka - $1</li>
+                    <li>Hennessy - $1</li>
+                    <li>Patron Tequila - $1</li>
+                    <li>Corona (no virus) - $1</li>
+                    <li>Heineken - $1</li>
+                    <li>Guinness - $1</li>
+                    <li>Red Stripe - $1</li>
+                    <li>Bank's - $1</li>
+                </ol>
+            </article>
+
+            <footer>
+                <hr />
+                999-99 Liberty Ave, South Richmond Hill, Queens, NY 99999 &#124; 555-555-5555<br/>
+                &copy; 2020 Narish Singh. All rights reserved. Disclaimer: this is a fictional establishment
+            </footer>
+        </div>
+
+        <!--Bootstrap scripts-->
+        <script src="scripts/restaurantScripts.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <noscript>JavaScript isn't enabled in your browser</noscript>
+    </body>
+</html>

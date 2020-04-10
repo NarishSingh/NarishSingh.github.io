@@ -1,0 +1,262 @@
+/* 
+SG Self Assessment - Restaurant Site v3
+Stylesheet
+*/
+
+/** Page Structure */
+.container-fluid
+{
+    background-color: rgba(252,210,15, 0.3);
+}
+
+header, header .jumbotron
+{
+    font-family: 'Aguafina Script', cursive;
+    text-align: center;
+    background-color: rgba(0,159,71,0.5);
+    color: darkred;
+}
+
+footer
+{
+    font-family: 'Aguafina Script', cursive;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(0,159,71,0.5);
+    color: darkred;
+}
+
+/*Main Page Header specific*/
+header .container
+{
+    width: 100%;
+}
+
+
+.headerImage
+{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.headerText
+{
+    position: inherit;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: darkred;
+    width: 100%;
+    padding: 10px;
+}
+
+/*Nav*/
+nav
+{ 
+    border-top: thin black solid;
+    border-bottom: thin black solid;
+    padding: 5px;
+}
+
+nav .btn
+{
+    font-family: 'Roboto Slab', serif;
+    background-color: whitesmoke;
+    color: darkred;
+}
+
+nav .btn:hover
+{
+    background-color: goldenrod;
+    font-weight: bold;
+}
+
+.links
+{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.links:hover
+{
+    color: darkred;
+}
+
+.links:active
+{
+    text-decoration: none;
+}
+
+.navbar-brand
+{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+}
+
+.nav-link
+{
+    font-family: 'Roboto Slab', serif;
+    color: red;
+}
+
+.nav-link:hover
+{
+    color: goldenrod;
+}
+
+.nav-link:active
+{
+    color: whitesmoke;
+}
+
+
+/*Images*/
+div img
+{
+    height: 500px;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.innerContainer
+{
+    background: rgba(0,0,0,0.8);
+}
+
+.innerContainer p
+{
+    color: goldenrod;
+}
+
+/*Text*/
+article h2, article h3
+{
+    font-family: 'Aguafina Script', cursive;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+p
+{
+    font-family: 'Roboto Slab', serif;
+    color: darkred;
+}
+
+/** Form Specific */
+form
+{
+    width: 100%;
+}
+
+label, legend
+{
+    float: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+fieldset 
+{
+    background-color: rgba(0,159,71,.2);
+    width: 80%;
+    padding: 12px 12px;
+    margin: 0px auto;
+    box-sizing:	border-box;
+}
+
+input[type=text] 
+{
+    border: 1px solid darkgreen;
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+}
+
+textarea 
+{
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    resize: none;
+}
+
+input[type=submit] 
+{
+    font-size: 1.5em;
+    background-color: darkred;
+    color: whitesmoke;
+    padding: 5px 8px;
+}
+
+input[type=submit]:hover 
+{
+    background-color: goldenrod;
+    color: black;
+}
+
+input[type=reset] 
+{
+    font-size: 1.2em;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+input[type=reset]:hover 
+{
+    background-color: goldenrod;
+    color: black;
+}
+
+/** Menu Specific */
+/*Table*/
+table
+{
+    width: 75%;
+    margin: auto;
+}
+
+.cellTitle
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.col-lg-3, .col-md-4, .col-sm-6
+{
+    border-collapse: collapse;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+    border: thin solid #666666;
+}
+
+table caption
+{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Lists*/
+ol
+{
+    list-style-type: square;
+}
+
+li
+{
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+}

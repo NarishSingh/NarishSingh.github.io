@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+SG Self Assessment - Restaurant Site v3
+Contact Us
+-->
+<html>
+    <head>
+        <title>Cater with Singh's</title>
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <h1>Singh's Bush Cook - Bar &AMP; Restaurant</h1>
+                <h3>Serving countryside Indo-Guyanese cuisine and fusion dishes since 2020</h3>
+                <h5>999-99 Liberty Ave, Queens, NY 99999 &#124; 555-555-5555</h5>
+                <hr/>
+            </header>
+
+            <nav style="text-align: center">
+                <a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
+                <a class="btn badge-pill" href="menu.html"><i class="fas fa-book-open"></i></a>
+                <a class="btn badge-pill disabled" href="contact.html" aria-disabled="true"><i class="fas fa-feather-alt"></i></a>
+            </nav>
+
+            <article>
+                <br/>
+                <h3>Contact Us</h3>
+            </article>
+
+            <form action="submit.html" method="POST">
+                <!--Text Inputs-->
+                <div class="d-flex p-2 justify-content-center">
+                    <label for="name">Name:</label>
+                </div>
+                <div class="d-flex p-2 justify-content-center">
+                    <br/><input type="text" id="name" placeholder="First Last" onsubmit="validateName();" required=""/><br/>
+                    <p></p>
+                </div>
+
+                <div class="d-flex p-2 justify-content-center">
+                    <label for="email">E-mail:</label>
+                </div>
+                <div class="d-flex p-2 justify-content-center">
+                    <br/><input type="text" id="email" placeholder="address@email.com" onsubmit="validateEmail();" required/><br/>
+                    <p></p>
+                </div>
+
+                <div class="d-flex p-2 justify-content-center">
+                    <label for="phone">Phone Number:</label>
+                </div>
+                <div class="d-flex p-2 justify-content-center">
+                    <br/><input type="number" id="phone" placeholder="555-555-5555" onsubmit="validatedPhone();" required/><br/>
+                    <p></p>
+                </div>
+
+                <!--Select/Drop Down Menus-->
+                <div class="d-flex p-2 justify-content-center">
+                    <label for="inquiry">Reasons for Contacting</label><br/>
+                </div>
+                <div class="d-flex p-2 justify-content-center">
+                    <select>
+                        <option value="catering" selected>Catering</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <br/>
+                <div class="d-flex p-2 justify-content-center">
+                    <label for="cater">Catering Type:</label><br/>
+                </div>
+                <div class="d-flex p-2 justify-content-center">
+                    <select>
+                        <option value="weddingHall">Wedding - Hall</option>
+                        <option value="weddingChurch">Wedding - Church</option>
+                        <option value="party">Private Party</option>
+                        <option value="jhandi">Jhandi or other Religious Function</option>
+                        <option value="na" selected>--Not Applicable--</option>
+                    </select>
+                </div>
+
+                <!--Textarea-->
+                <br/><br/>
+                <div class="d-flex p-2 justify-content-center">
+                    <label for="comments">Feedback and Additional Comments</label><br/>
+                </div>
+                <div class="d-flex p-2 justify-content-center">
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+
+                <!--Radio Buttons-->
+                <div class="d-flex p-2 justify-content-center">
+                    <fieldset>
+                        <legend>Have you ever eaten with us before?</legend>
+                        <input type="radio" id="choice1" name="everBeen" value="y">
+                        <label for="choice1">Yes</label><br/>
+                        <input type="radio" id="choice2" name="everBeen" value="n">
+                        <label for="choice2">No</label><br/>
+                    </fieldset>
+                </div>
+
+                <!--Checkbox-->
+                <div class="d-flex p-2 justify-content-center">
+                    <fieldset>
+                        <legend>Best days to reach out:</legend>
+                        <input type="checkbox" id="m" name="contactDay" value="M">
+                        <label for="m">M</label>
+                        <input type="checkbox" id="t" name="contactDay" value="T">
+                        <label for="t">T</label>
+                        <input type="checkbox" id="w" name="contactDay" value="W">
+                        <label for="w">W</label>
+                        <input type="checkbox" id="th" name="contactDay" value="TH">
+                        <label for="th">Th</label>
+                        <input type="checkbox" id="f" name="contactDay" value="F">
+                        <label for="f">F</label>
+                    </fieldset>
+                </div>
+
+                <!--Form Action Buttons-->
+                <br/>
+                <div class="d-flex p-2 justify-content-center">
+                    <input type="submit"/>
+                    <input type="reset"/>
+                </div>
+            </form>
+
+
+            <footer>
+                <hr />
+                999-99 Liberty Ave, South Richmond Hill, Queens, NY 99999 &#124; 555-555-5555
+                &copy; 2020 Narish Singh. All rights reserved. Disclaimer: this is a fictional establishment
+            </footer>
+        </div>
+
+        <!--Bootstrap scripts-->
+        <script src="scripts/restaurantScripts.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <noscript>JavaScript isn't enabled in your browser</noscript>
+    </body>
+</html>
