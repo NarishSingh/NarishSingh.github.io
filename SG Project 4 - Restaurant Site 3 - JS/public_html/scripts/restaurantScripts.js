@@ -34,10 +34,9 @@ function validateName()
     if (userName==="") 
     {
         alert("Please enter a contact name");
-        return false;
     } else 
     {
-        return false;
+        alert("Thank you " + userName);
     }
 }
 
@@ -52,10 +51,9 @@ function validateEmail()
     if (!userEmail.includes("@")) 
     {
         alert("Please enter a valid email");
-        return false;
     } else 
     {
-        return false;
+        confirm("Please confirm that your email is: " + userEmail);
     }
 }
 
@@ -70,9 +68,45 @@ function validatedPhone()
     if (userPhone.length!==10 || userPhone.length!==11) 
     {
         alert("Please enter a valid phone number");
-        return false;
     } else 
     {
-        return false;
+        confirm("Please confirm that your number is: " + userPhone);
     }
+}
+
+/** validate()
+ * Validate 
+ * @returns {Boolean} - false so page doesn't reload
+ */
+function validate()
+{
+    var contactUs=document.forms["contact-us"];
+    contactUs.className="needs-validation";
+    var userName=document.getElementById("name").value;
+    var userEmail=document.getElementById("email").value;
+    var userPhone=document.getElementById("phone").value;
+    
+    //name
+    if (userName==="") 
+    {
+        alert("Please enter a contact name");
+    }
+    else
+    {
+        alert("Welcome " + userName + "!");
+    }
+    
+    //email
+    if (!userEmail.includes("@")) 
+    {
+        alert("Please enter a valid email");
+    }
+    
+    //phone
+    if (userPhone.length!==10 || userPhone.length!==11) 
+    {
+        alert("Please enter a valid phone number");
+    }
+    
+    return false;
 }

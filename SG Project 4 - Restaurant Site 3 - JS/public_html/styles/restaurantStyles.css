@@ -191,6 +191,7 @@ textarea
     resize: none;
 }
 
+/*
 input[type=submit] 
 {
     font-size: 1.5em;
@@ -204,6 +205,22 @@ input[type=submit]:hover
     background-color: goldenrod;
     color: black;
 }
+*/
+
+#submitBtn
+{
+    font-size: 1.5em;
+    background-color: darkred;
+    color: whitesmoke;
+    padding: 5px 8px;
+}
+
+#submitBtn:hover
+{
+    background-color: goldenrod;
+    color: black;
+}
+
 
 input[type=reset] 
 {
